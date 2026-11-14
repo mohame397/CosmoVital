@@ -1,0 +1,177 @@
+export default {
+  "schemaVersion": 1,
+  "verifiedOn": "2026-11-13",
+  "challenge": {
+    "title": "Create Health Monitoring Software for Astronauts on Space Missions",
+    "year": 2026,
+    "officialUrl": "https://www.spaceappschallenge.org/2026/challenges/health-monitoring-software/",
+    "officialPageVerification": "Direct challenge page returned 502; supplied resource links were independently opened and verified on NASA/CSA sites.",
+    "resourceCatalogMirror": "https://hackathlone.com/challenges/health-monitoring-software",
+    "resourceCount": 5,
+    "catalogLimitation": {
+      "en": "The five published resources verified here are educational pages. Their availability does not itself mean live or personal astronaut readings are downloadable.",
+      "ar": "المصادر الخمسة المتحقق منها هنا صفحات تعليمية. إتاحتها لا تعني وحدها وجود قراءات شخصية أو حية لرواد الفضاء للتحميل."
+    },
+    "resourceLinksProvidedByUser": true,
+    "primaryResourcePagesVerified": true
+  },
+  "resources": [
+    {
+      "id": "nasa-five-hazards",
+      "kind": "educational-reference",
+      "organization": "NASA Human Research Program",
+      "title": {
+        "en": "5 Hazards of Human Spaceflight",
+        "ar": "المخاطر الخمسة لرحلات الفضاء البشرية"
+      },
+      "url": "https://www.nasa.gov/hrp/hazards/",
+      "summary": {
+        "en": "NASA groups human spaceflight hazards into radiation, isolation and confinement, distance from Earth, gravity fields, and hostile or closed environments.",
+        "ar": "تجمع ناسا مخاطر رحلات الفضاء في الإشعاع والعزلة والبعد عن الأرض وتغيّر الجاذبية والبيئات المغلقة أو المعادية."
+      },
+      "supports": [
+        "spaceflight-context",
+        "measurement-selection"
+      ],
+      "containsPersonalReadings": false
+    },
+    {
+      "id": "nasa-human-risks",
+      "kind": "educational-reference",
+      "organization": "NASA Human Research Program",
+      "title": {
+        "en": "Risks of Human Spaceflight",
+        "ar": "مخاطر الصحة في رحلات الفضاء"
+      },
+      "url": "https://www.nasa.gov/hrp/risks/",
+      "summary": {
+        "en": "Research context about health and performance risks. Use it to explain why indicators matter; the page is not a personal sensor feed.",
+        "ar": "سياق بحثي لمخاطر الصحة والأداء يوضح أهمية متابعة المؤشرات؛ الصفحة ليست بثًا لحساسات شخصية."
+      },
+      "supports": [
+        "guidance",
+        "risk-context"
+      ],
+      "containsPersonalReadings": false
+    },
+    {
+      "id": "nasa-ongoing-hrp",
+      "kind": "educational-reference",
+      "organization": "NASA Human Research Program",
+      "title": {
+        "en": "Ongoing HRP Research",
+        "ar": "أبحاث برنامج البحوث البشرية الجارية"
+      },
+      "url": "https://www.nasa.gov/hrp/ongoing-hrp-research/",
+      "summary": {
+        "en": "NASA articles about ongoing human research. Individual study findings need their own methods and population context.",
+        "ar": "مقالات ناسا عن البحوث البشرية الجارية؛ نتائج كل دراسة تُقرأ مع طرقها وعينتها البحثية."
+      },
+      "supports": [
+        "research-literacy",
+        "scientific-context"
+      ],
+      "containsPersonalReadings": false
+    },
+    {
+      "id": "csa-radiation-monitoring",
+      "kind": "educational-reference",
+      "organization": "Canadian Space Agency",
+      "title": {
+        "en": "Monitoring radiation for astronaut health",
+        "ar": "رصد الإشعاع لحماية صحة رواد الفضاء"
+      },
+      "url": "https://www.asc-csa.gc.ca/eng/news/articles/2026/2026-02-26-monitoring-radiation-astronaut-health.asp",
+      "summary": {
+        "en": "Canadian research and technologies for space-radiation monitoring. Space-weather observations do not establish a person’s absorbed dose.",
+        "ar": "أبحاث وتقنيات كندية لرصد الإشعاع الفضائي؛ بيانات الطقس الفضائي لا تحدد الجرعة الممتصة لشخص بعينه."
+      },
+      "supports": [
+        "radiation-education"
+      ],
+      "containsPersonalReadings": false
+    },
+    {
+      "id": "csa-space-experiments",
+      "kind": "educational-reference",
+      "organization": "Canadian Space Agency",
+      "title": {
+        "en": "Why conduct science experiments in space?",
+        "ar": "لماذا تُجرى التجارب العلمية في الفضاء؟"
+      },
+      "url": "https://www.asc-csa.gc.ca/eng/iss/science/why-do-we-conduct-science-experiments-in-space.asp",
+      "summary": {
+        "en": "Explains how space experiments support human-health and exploration research. This is context rather than a medical interpretation rule.",
+        "ar": "يوضح دور تجارب الفضاء في أبحاث الصحة والاستكشاف؛ وهو سياق تعليمي وليس قاعدة تفسير طبي."
+      },
+      "supports": [
+        "research-literacy"
+      ],
+      "containsPersonalReadings": false
+    }
+  ],
+  "datasets": [
+    {
+      "id": "OSD-575",
+      "version": 3,
+      "kind": "nasa-research-metadata",
+      "name": "SpaceX Inspiration4 Blood Serum Metabolic Panel and Immune/Cardiac Cytokine Arrays (Comprehensive Metabolic Panel and Multiplex)",
+      "organization": "NASA Open Science Data Repository",
+      "sourceUrl": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-575",
+      "doi": "10.26030/mc5d-p710",
+      "license": "CC0-1.0",
+      "initialReleaseDate": "2024-05-14",
+      "researchPopulation": {
+        "en": "Four private astronauts on the September 2021 Inspiration4 three-day low-Earth-orbit mission.",
+        "ar": "أربعة رواد فضاء مدنيين في رحلة Inspiration4 إلى مدار أرضي منخفض لمدة ثلاثة أيام في سبتمبر ٢٠٢١."
+      },
+      "sampleSize": 4,
+      "measurements": [
+        "Comprehensive metabolic panels",
+        "Immune and cardiovascular cytokine assays"
+      ],
+      "originalTimePoints": [
+        "L-92",
+        "L-44",
+        "L-3",
+        "R+1",
+        "R+45",
+        "R+82"
+      ],
+      "timePointMeaning": {
+        "en": "Study-relative collection labels before launch and after return; do not convert these to invented personal calendar timestamps.",
+        "ar": "رموز زمنية نسبية لجمع العينات قبل الإطلاق وبعد العودة؛ لا تُحوّل إلى تواريخ شخصية مفترضة."
+      },
+      "unitsVerified": false,
+      "unitsStatus": {
+        "en": "Exact analytes and units must be validated from each downloaded assay file before plotting numeric data.",
+        "ar": "يجب التحقق من أسماء التحاليل ووحداتها من كل ملف فعلي قبل رسم قيم رقمية."
+      },
+      "access": {
+        "en": "NASA describes processed Inspiration4 data as public; private raw/genetic data may require an approved application.",
+        "ar": "توضح ناسا أن بيانات Inspiration4 المعالجة عامة، بينما قد تحتاج البيانات الخام أو الجينية الخاصة إلى طلب معتمد."
+      },
+      "metadataVerified": true,
+      "measurementsImported": false,
+      "dataImportStatus": "metadata-only-no-measurement-file-retrieved",
+      "downloadBlocker": "The execution sandbox denied outbound urllib requests, and the web verifier could not retrieve the OSDR file API. No numeric data is represented as imported.",
+      "limitations": [
+        {
+          "en": "Research samples are not live personal health monitoring.",
+          "ar": "عينات بحثية وليست مراقبة شخصية حية."
+        },
+        {
+          "en": "A four-person, three-day mission is not a validated healthy baseline or long-duration clinical threshold.",
+          "ar": "عينة من أربعة أشخاص ورحلة ثلاثة أيام ليست خط أساس صحيًا معتمدًا أو حدًا طبيًا للرحلات الطويلة."
+        }
+      ],
+      "verificationSources": [
+        "https://osdr.nasa.gov/bio/repo/data/studies/OSD-575",
+        "https://www.nasa.gov/osdr-latest-news-i4-mission-datasets/",
+        "https://api.nasa.gov/"
+      ]
+    }
+  ],
+  "personalHistoryIntegration": false,
+  "spaceWeatherDoseInference": false
+};

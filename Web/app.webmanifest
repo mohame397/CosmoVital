@@ -1,0 +1,19 @@
+{
+  "id": "/",
+  "name": "CosmoVital \u2014 Dual-Baseline Health Prototype",
+  "short_name": "CosmoVital",
+  "description": "Offline personal baselines, published spaceflight research and explainable health trends.",
+  "start_url": "./index.html#overview",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1422",
+  "theme_color": "#111e2d",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

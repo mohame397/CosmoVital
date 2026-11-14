@@ -1,0 +1,339 @@
+export default {
+  "schemaVersion": 1,
+  "verifiedOn": "2026-11-13",
+  "classification": "published_research_summaries",
+  "containsPersonalMeasurements": false,
+  "containsRawParticipantRecords": false,
+  "clinicalThresholds": false,
+  "purpose": {
+    "en": "Published spaceflight group statistics for scientific context. These values are not normal ranges, individual observed ranges, or medical alert thresholds.",
+    "ar": "إحصاءات منشورة لمجموعة من رواد الفضاء للسياق العلمي. ليست نطاقات طبيعية أو حدود قياسات الأفراد أو حدودًا للإنذار الطبي."
+  },
+  "studies": [
+    {
+      "id": "lee-2020-iss-resting-hemodynamics",
+      "title": "Arterial structure and function during and after long-duration spaceflight",
+      "authors": "Stuart M. C. Lee et al.",
+      "year": 2020,
+      "journal": "Journal of Applied Physiology",
+      "volume": 129,
+      "pages": "108–123",
+      "doi": "10.1152/japplphysiol.00550.2019",
+      "sourceUrl": "https://journals.physiology.org/doi/full/10.1152/japplphysiol.00550.2019",
+      "doiUrl": "https://doi.org/10.1152/japplphysiol.00550.2019",
+      "sourceLocation": "Table 2: Resting hemodynamic parameters; Methods: Subjects and Overall protocol",
+      "sourceOrganization": "Peer-reviewed study supported by NASA Human Research Program",
+      "platform": "International Space Station",
+      "population": {
+        "cohortSize": 13,
+        "men": 10,
+        "women": 3,
+        "ageYears": {
+          "mean": 46,
+          "standardDeviation": 8,
+          "observedMinimum": 38,
+          "observedMaximum": 58
+        },
+        "missionDurationDays": {
+          "mean": 189,
+          "standardDeviation": 61,
+          "observedMinimum": 126,
+          "observedMaximum": 340
+        },
+        "description": {
+          "en": "Thirteen adult astronauts on ISS missions; a selected research cohort, not a reference population for all space travelers.",
+          "ar": "١٣ رائد فضاء بالغًا في مهمات المحطة الدولية؛ عينة بحثية مختارة وليست مرجعًا لجميع المسافرين إلى الفضاء."
+        }
+      },
+      "statistic": "mean_and_standard_deviation",
+      "perPointSampleSize": null,
+      "sampleSizeNote": "The article identifies a 13-person cohort; a separate sample size for each selected table cell was not provided in the retrieved table.",
+      "extraction": {
+        "method": "Manual transcription of published numerical table cells, checked against the publisher's indexed Table 2 and methods text.",
+        "rawDataDownload": false,
+        "originalAbsoluteTimestampsAvailable": false,
+        "originalTimeLabelsPreserved": true
+      },
+      "rights": {
+        "redistribution": "Factual numerical summaries with attribution; no article text, figures, or individual participant dataset reproduced.",
+        "articleLicense": "Not independently verified. No open license is claimed for the underlying article."
+      },
+      "timepoints": [
+        {
+          "id": "L-180",
+          "sourceLabel": "L−180",
+          "phase": "preflight",
+          "nominalDayRelativeToLaunch": -180
+        },
+        {
+          "id": "L-60",
+          "sourceLabel": "L−60",
+          "phase": "preflight",
+          "nominalDayRelativeToLaunch": -60
+        },
+        {
+          "id": "FD15",
+          "sourceLabel": "FD15",
+          "phase": "inflight",
+          "nominalFlightDay": 15,
+          "actualFlightDayWindow": [
+            7,
+            23
+          ]
+        },
+        {
+          "id": "FD60",
+          "sourceLabel": "FD60",
+          "phase": "inflight",
+          "nominalFlightDay": 60,
+          "actualFlightDayWindow": [
+            54,
+            75
+          ]
+        },
+        {
+          "id": "late-flight",
+          "sourceLabel": "FD180",
+          "phase": "inflight",
+          "nominalFlightDay": null,
+          "methodsNominalFlightDay": 160,
+          "actualFlightDayWindow": [
+            109,
+            194
+          ],
+          "label": {
+            "en": "Late flight",
+            "ar": "أواخر الرحلة"
+          },
+          "sourceDiscrepancy": "Table 2 labels this column FD180; the methods and table legend describe FD160. The discrepancy is preserved, not silently corrected."
+        },
+        {
+          "id": "R+5",
+          "sourceLabel": "R+5",
+          "phase": "postflight",
+          "nominalDayAfterLanding": 5
+        }
+      ],
+      "metrics": [
+        {
+          "metric": "heart",
+          "name": {
+            "en": "Heart rate",
+            "ar": "معدل ضربات القلب"
+          },
+          "unit": "bpm",
+          "summaries": [
+            {
+              "timepoint": "L-180",
+              "posture": "seated",
+              "mean": 61,
+              "standardDeviation": 8
+            },
+            {
+              "timepoint": "L-180",
+              "posture": "supine",
+              "mean": 57,
+              "standardDeviation": 9
+            },
+            {
+              "timepoint": "L-60",
+              "posture": "seated",
+              "mean": 62,
+              "standardDeviation": 11
+            },
+            {
+              "timepoint": "L-60",
+              "posture": "supine",
+              "mean": 58,
+              "standardDeviation": 10
+            },
+            {
+              "timepoint": "FD15",
+              "posture": "inflight",
+              "mean": 60,
+              "standardDeviation": 9
+            },
+            {
+              "timepoint": "FD60",
+              "posture": "inflight",
+              "mean": 62,
+              "standardDeviation": 6
+            },
+            {
+              "timepoint": "late-flight",
+              "posture": "inflight",
+              "mean": 60,
+              "standardDeviation": 7
+            },
+            {
+              "timepoint": "R+5",
+              "posture": "seated",
+              "mean": 70,
+              "standardDeviation": 10
+            },
+            {
+              "timepoint": "R+5",
+              "posture": "supine",
+              "mean": 64,
+              "standardDeviation": 8
+            }
+          ]
+        },
+        {
+          "metric": "sys",
+          "name": {
+            "en": "Systolic blood pressure",
+            "ar": "ضغط الدم الانقباضي"
+          },
+          "unit": "mmHg",
+          "summaries": [
+            {
+              "timepoint": "L-180",
+              "posture": "seated",
+              "mean": 118,
+              "standardDeviation": 12
+            },
+            {
+              "timepoint": "L-180",
+              "posture": "supine",
+              "mean": 116,
+              "standardDeviation": 12
+            },
+            {
+              "timepoint": "L-60",
+              "posture": "seated",
+              "mean": 122,
+              "standardDeviation": 17
+            },
+            {
+              "timepoint": "L-60",
+              "posture": "supine",
+              "mean": 116,
+              "standardDeviation": 10
+            },
+            {
+              "timepoint": "FD15",
+              "posture": "inflight",
+              "mean": 122,
+              "standardDeviation": 11
+            },
+            {
+              "timepoint": "FD60",
+              "posture": "inflight",
+              "mean": 120,
+              "standardDeviation": 9
+            },
+            {
+              "timepoint": "late-flight",
+              "posture": "inflight",
+              "mean": 120,
+              "standardDeviation": 9
+            },
+            {
+              "timepoint": "R+5",
+              "posture": "seated",
+              "mean": 123,
+              "standardDeviation": 11
+            },
+            {
+              "timepoint": "R+5",
+              "posture": "supine",
+              "mean": 117,
+              "standardDeviation": 9
+            }
+          ]
+        },
+        {
+          "metric": "dia",
+          "name": {
+            "en": "Diastolic blood pressure",
+            "ar": "ضغط الدم الانبساطي"
+          },
+          "unit": "mmHg",
+          "summaries": [
+            {
+              "timepoint": "L-180",
+              "posture": "seated",
+              "mean": 74,
+              "standardDeviation": 9
+            },
+            {
+              "timepoint": "L-180",
+              "posture": "supine",
+              "mean": 69,
+              "standardDeviation": 7
+            },
+            {
+              "timepoint": "L-60",
+              "posture": "seated",
+              "mean": 76,
+              "standardDeviation": 8
+            },
+            {
+              "timepoint": "L-60",
+              "posture": "supine",
+              "mean": 70,
+              "standardDeviation": 7
+            },
+            {
+              "timepoint": "FD15",
+              "posture": "inflight",
+              "mean": 73,
+              "standardDeviation": 9
+            },
+            {
+              "timepoint": "FD60",
+              "posture": "inflight",
+              "mean": 72,
+              "standardDeviation": 8
+            },
+            {
+              "timepoint": "late-flight",
+              "posture": "inflight",
+              "mean": 74,
+              "standardDeviation": 8
+            },
+            {
+              "timepoint": "R+5",
+              "posture": "seated",
+              "mean": 74,
+              "standardDeviation": 5
+            },
+            {
+              "timepoint": "R+5",
+              "posture": "supine",
+              "mean": 69,
+              "standardDeviation": 6
+            }
+          ]
+        }
+      ],
+      "interpretation": {
+        "en": "Mean ± SD describes this cohort at each sampled phase. SD measures spread; mean ± SD is not a healthy interval, an observed minimum–maximum range, or a confidence interval. Rest, activity, posture, time since launch, individual baseline, sensors, symptoms, and cabin conditions affect interpretation. No risk percentage or diagnostic label can be derived from these summary cells.",
+        "ar": "المتوسط ± الانحراف المعياري يصف هذه العينة في كل مرحلة. الانحراف المعياري مقياس للتشتت؛ ليس مجالًا صحيًا أو أقل وأعلى قراءة فعلية أو فترة ثقة. يتأثر التفسير بالراحة والنشاط والوضعية ووقت الرحلة والخط الأساسي الشخصي والحساس والأعراض وظروف المقصورة. لا تُستخرج نسبة خطر أو تشخيص من هذه الخلايا الإحصائية."
+      }
+    }
+  ],
+  "unavailableMetrics": [
+    {
+      "metric": "oxygen",
+      "status": "No numerical spaceflight reference distribution transcribed or validated in this dataset.",
+      "supportingStudy": {
+        "title": "Molecular and physiological changes in the SpaceX Inspiration4 civilian crew",
+        "doi": "10.1038/s41586-024-07648-x",
+        "sourceUrl": "https://www.nature.com/articles/s41586-024-07648-x",
+        "sourceLocation": "Extended Data Figure 7",
+        "cohortSize": 4,
+        "missionDurationDays": 3,
+        "knownLimitations": "In-flight wearable oxygen saturation collection failed for two crew members. Plot axis limits are not reference ranges. Machine-readable source observations were not retrieved."
+      }
+    }
+  ],
+  "operationalRules": {
+    "importIntoPersonalHistory": false,
+    "useForClinicalAlertThresholds": false,
+    "useForRiskPercentage": false,
+    "silentlyConvertStandardDeviationToHealthyRange": false,
+    "allowResearchComparisonWithExplicitContext": true
+  }
+};
